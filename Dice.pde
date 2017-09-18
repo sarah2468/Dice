@@ -13,7 +13,6 @@ void draw()
           for(int x = 0; x < 500; x = x + 100){
             Die dice = new Die(x, y);
             dice.show();
-            dice.roll();
           }
         }
         fill(#FCFCFC);
@@ -39,7 +38,6 @@ class Die //models one single dice cube
         //variable initializations here
         myX = x;
         myY = y;
-        roll();
     }
     void roll()
     {
@@ -96,6 +94,6 @@ class Die //models one single dice cube
         rect(myX+20, myY+20, 50, 50, 8);
         fill(#FFFFFF);
         rect(myX+25, myY+25, 50, 50, 8);
-        
+        roll();
     }
 }
